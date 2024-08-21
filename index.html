@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Mateo Koffler</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Mateo Koffler</h1>
+        <p>Pentester</p>
+    </header>
+
+    <section class="descripcion">
+        <img src="img/Foto-yo.jpg">
+        <p>Soy un apasionado de la ciberseguridad, con enfoque en pentesting y evaluación de vulnerabilidades. Actualmente, estoy en la etapa inicial de mi carrera, buscando aprender y crecer en el ámbito de la seguridad informática.</p>
+    </section>
+
+    <section class="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Testing de aplicaciones web</li>
+            <li>Reconocimiento y escaneo de redes</li>
+            <li>Manejo de herramientas como Burp Suite y Nmap</li>
+            <li>Conocimientos básicos en criptografía</li>
+            <li>Scripting básico en Python y Bash</li>
+        </ul>
+    </section>
+
+    <section class="experiencia">
+        <h2>Experiencia</h2>
+        <ul>
+            <li>Asistente de Seguridad en Prácticas, [Empresa XYZ] - <em>[Fecha]</em><br>
+                Colaboré en la revisión de políticas de seguridad y participé en la identificación de vulnerabilidades básicas en aplicaciones internas.</li>
+            <li>Proyecto Personal: Evaluación de Vulnerabilidades en Aplicaciones Web - <em>[Fecha]</em><br>
+                Realicé pruebas de seguridad en aplicaciones web utilizando herramientas como OWASP ZAP, detectando y documentando problemas comunes como XSS y CSRF.</li>
+        </ul>
+    </section>
+
+    <section class="proyectos">
+        <h2>Proyectos</h2>
+        <ul>
+            <li>Pentesting en un entorno simulado de CTF - <em>[Fecha]</em><br>
+                Participé en un CTF (Capture The Flag) donde exploté vulnerabilidades en sistemas simulados, logrando comprometer servicios y obtener flags.</li>
+            <li>Desarrollo de Scripts para Automatización de Pruebas de Seguridad - <em>[Fecha]</em><br>
+                Creé scripts en Python para automatizar el escaneo de puertos y la detección de vulnerabilidades en redes pequeñas.</li>
+        </ul>
+    </section>
+
+    <section class="contacto">
+        <h2>Contacto</h2>
+        <form action="enviar.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/mateo-koffler-857348232/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/m4tte-sh" target="_blank">GitHub</a>
+    </footer>    
+</body>
+</html>

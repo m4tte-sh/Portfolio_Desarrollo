@@ -1,0 +1,43 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.descripcion img {
+    max-width: 140px;
+    border-radius: 50%;
+}
+
+section {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    margin: 0 10px;
+}
