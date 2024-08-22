@@ -6,17 +6,82 @@ body {
 }
 
 header {
-    text-align: center;
+    width: 100%;
+    background-color: rgb(245,245,245);
+}
+
+header nav{
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 20px;
 }
 
+header .nav_quien-soy {
+    font-weight: bold;
+    color: #5ba7e6;
+    font-size: 1em;
+}
+
+header .navegacion-links{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+header .nav_li{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header .nav_li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+}
+
+.descripcion {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+}
+
+
 .descripcion img {
     max-width: 140px;
-    border-radius: 50%;
+    border-radius: 30%;
+    margin-inline: 10px;
+}
+
+.main-content{
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.descripcion, .habilidades, .experiencia, .proyectos, .contacto {
+    margin-bottom: 40px;
 }
 
 section {
     padding: 20px;
+    max-width: 1000px;
+}
+
+.contacto{
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 form {
@@ -31,6 +96,23 @@ form label {
 form input, form textarea {
     padding: 10px;
     margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #5ba7e6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+form button:hover {
+    background-color: #4a91c5;
 }
 
 footer {
@@ -40,4 +122,15 @@ footer {
 
 footer a {
     margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+}
+
+footer a:hover {
+    color: #0077b5;
+}
+
+footer i {
+    margin-right: 5px;
 }

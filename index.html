@@ -8,65 +8,83 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Mateo Koffler</h1>
-        <p>Pentester</p>
+        <nav class="nav">
+            <div class="navegacion-links">
+                <div class="nav_quien-soy">
+                    <h1>Mateo Koffler</h1>
+                    <p>Desarrollador de Software</p>
+                </div>
+                <div class="nav_li">
+                    <a href="#descripcion">Home</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <section class="descripcion">
-        <img src="img/Foto-yo.jpg">
-        <p>Soy un apasionado de la ciberseguridad, con enfoque en pentesting y evaluación de vulnerabilidades. Actualmente, estoy en la etapa inicial de mi carrera, buscando aprender y crecer en el ámbito de la seguridad informática.</p>
-    </section>
-
-    <section class="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>Testing de aplicaciones web</li>
-            <li>Reconocimiento y escaneo de redes</li>
-            <li>Manejo de herramientas como Burp Suite y Nmap</li>
-            <li>Conocimientos básicos en criptografía</li>
-            <li>Scripting básico en Python y Bash</li>
-        </ul>
-    </section>
-
-    <section class="experiencia">
-        <h2>Experiencia</h2>
-        <ul>
-            <li>Asistente de Seguridad en Prácticas, [Empresa XYZ] - <em>[Fecha]</em><br>
-                Colaboré en la revisión de políticas de seguridad y participé en la identificación de vulnerabilidades básicas en aplicaciones internas.</li>
-            <li>Proyecto Personal: Evaluación de Vulnerabilidades en Aplicaciones Web - <em>[Fecha]</em><br>
-                Realicé pruebas de seguridad en aplicaciones web utilizando herramientas como OWASP ZAP, detectando y documentando problemas comunes como XSS y CSRF.</li>
-        </ul>
-    </section>
-
-    <section class="proyectos">
-        <h2>Proyectos</h2>
-        <ul>
-            <li>Pentesting en un entorno simulado de CTF - <em>[Fecha]</em><br>
-                Participé en un CTF (Capture The Flag) donde exploté vulnerabilidades en sistemas simulados, logrando comprometer servicios y obtener flags.</li>
-            <li>Desarrollo de Scripts para Automatización de Pruebas de Seguridad - <em>[Fecha]</em><br>
-                Creé scripts en Python para automatizar el escaneo de puertos y la detección de vulnerabilidades en redes pequeñas.</li>
-        </ul>
-    </section>
-
-    <section class="contacto">
-        <h2>Contacto</h2>
-        <form action="enviar.php" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <footer>
-        <a href="https://www.linkedin.com/in/mateo-koffler-857348232/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/m4tte-sh" target="_blank">GitHub</a>
-    </footer>    
+    <main class="main-content">
+        <section class="descripcion" id="descripcion">
+            <img src="img/Foto-yo.jpg">
+            <p>Soy un desarrollador de software con un enfoque en la seguridad informática. Me apasiona crear aplicaciones seguras y eficientes, utilizando las mejores prácticas de codificación y protección contra vulnerabilidades comunes.</p>
+        </section>
+    
+        <section class="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Desarrollo de aplicaciones web seguras</li>
+                <li>Conocimiento de OWASP Top 10</li>
+                <li>Manejo de herramientas como Burp Suite, Nmap</li>
+                <li>Programación en Python, JavaScript</li>
+                <li>Control de versiones con Git</li>
+            </ul>
+        </section>
+    
+        <section class="experiencia">
+            <h2>Experiencia</h2>
+            <ul>
+                <li>Desarrollador en Prácticas, [Empresa XYZ] - <em>[Fecha]</em><br>
+                Participé en el desarrollo de una aplicación web, enfocándome en la implementación de medidas de seguridad para proteger contra inyecciones SQL y ataques XSS.</li>
+                <li>Proyecto Personal: Aplicación de Gestión Segura de Contraseñas - <em>[Fecha]</em><br>
+                Desarrollé una aplicación que almacena contraseñas de manera segura utilizando encriptación AES y buenas prácticas de seguridad.</li>
+            </ul>
+        </section>
+    
+        <section class="proyectos" id="proyectos">
+            <h2>Proyectos</h2>
+            <ul>
+                <li>Sistema de Autenticación Multi-Factor - <em>[Fecha]</em><br>
+                Creé un sistema de autenticación que integra múltiples factores de seguridad, como contraseñas y autenticación por tokens, para garantizar un acceso seguro.</li>
+                <li>Automatización de Pruebas de Seguridad en Aplicaciones Web - <em>[Fecha]</em><br>
+                Desarrollé scripts en Python para automatizar el proceso de pruebas de seguridad en aplicaciones web, enfocándome en la detección de vulnerabilidades comunes.</li>
+            </ul>
+        </section>
+    
+        <section class="contacto" id="contacto">
+            <h2>Contacto</h2>
+            <form action="enviar.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    
+        <footer>
+            <a href="https://www.linkedin.com/in/mateo-koffler-857348232/" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn    
+            </a>
+            <a href="https://github.com/m4tte-sh" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </footer>  
+    </main>  
 </body>
 </html>
