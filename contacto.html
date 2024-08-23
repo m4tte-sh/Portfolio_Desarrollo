@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Mateo Koffler</title>
+    <title>Contacto</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,32 +28,19 @@
     </header>
 
     <main class="main-content">
-        <section class="descripcion" id="descripcion">
-            <img src="img/Foto-yo.jpg">
-            <p>Soy un desarrollador de software con un enfoque en la seguridad informática. Me apasiona crear aplicaciones seguras y eficientes, utilizando las mejores prácticas de codificación y protección contra vulnerabilidades comunes.</p>
+        <section class="contacto" id="contacto">
+            <h2>Contacto</h2>
+            <form action="enviar.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
-    
-        <section class="habilidades">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Desarrollo de aplicaciones web seguras</li>
-                <li>Conocimiento de OWASP Top 10</li>
-                <li>Manejo de herramientas como Burp Suite, Nmap</li>
-                <li>Programación en Python, JavaScript</li>
-                <li>Control de versiones con Git</li>
-            </ul>
-        </section>
-    
-        <section class="experiencia">
-            <h2>Experiencia</h2>
-            <ul>
-                <li>Desarrollador en Prácticas, [Empresa XYZ] - <em>[Fecha]</em><br>
-                Participé en el desarrollo de una aplicación web, enfocándome en la implementación de medidas de seguridad para proteger contra inyecciones SQL y ataques XSS.</li>
-                <li>Proyecto Personal: Aplicación de Gestión Segura de Contraseñas - <em>[Fecha]</em><br>
-                Desarrollé una aplicación que almacena contraseñas de manera segura utilizando encriptación AES y buenas prácticas de seguridad.</li>
-            </ul>
-        </section>
-    </main>
+    </main>    
     <footer>
         <a href="https://www.linkedin.com/in/mateo-koffler-857348232/" target="_blank">
             <i class="fab fa-linkedin"></i> LinkedIn    
