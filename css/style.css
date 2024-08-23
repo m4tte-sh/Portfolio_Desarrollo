@@ -76,6 +76,13 @@ body.dark-mode {
 
 body.dark-mode a {
     color: #bb86fc;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+body.dark-mode a:hover {
+    color: #0077b5;
 }
 
 body.dark-mode .cambiar-modo {
