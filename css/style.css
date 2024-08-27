@@ -148,11 +148,17 @@ form label {
 }
 
 form input, form textarea {
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1em;
+    resize: none;
+}
+
+form textarea{
+    height: 110px;
 }
 
 form button {
